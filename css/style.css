@@ -3,29 +3,25 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 a{
     text-decoration: none;
+}
+p{
+    padding-bottom: 15px;
 }
 
     /* REUTILIZÁVEIS */
 
 /* CORES */
-.primary-color{
-    color: #F5A54E;
-    font-weight: 800;
-    font-family: "Open Sans", sans-serif;
+:root{
+    --primary-color: #F5A54E;
+    --second-color: #878380;
+    --bg-primary: #ECB57B;
+    --bg-second: #837770;
 }
-.second-color{
-    color: #878380;
-    font-family: "Open Sans", sans-serif;
-}
-.bg-primary1{
-    background-color: #ECB57B;
-}
-.bg-second2{
-    background-color: #837770;
-}
+
 /* BOTÃO PADRAO DO SITE */
 .button-padrao{
     margin: 30px 0;
@@ -100,6 +96,7 @@ a{
     font-family: "Open Sans", sans-serif;
 }
 .content-bloco1 h2{
+    color: var(--second-color);
     font-weight: 800;
     font-size: 20px;
     letter-spacing: 5px;
@@ -151,18 +148,35 @@ a{
     padding: 50px 0 60px 0;
     min-height: 100vh;
 }
+.content-bloco2 h1{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 55px;
+    padding-bottom: 15px;
+}
+.sub-tittle-2{
+    font-size: 25px;
+    padding-bottom: 50px;
+}
 .square-content{
     width: 320px;
     height: 450px;
     color: #fff;
     text-align: left;
+    background-color: var(--bg-second);
 }
 .square-content img{
     width: 100%;
     height: 60%;
 }
-.square-content h3, p{
+.square-content h3, .square-content p{
     padding: 15px 0 0 20px;
+}
+.square-content p{
+    font-size: 22px;
+}
+.content-bloco2 button{
+    background-color: var(--bg-second);
 }
 
     /* BLOCO 3 */
@@ -187,6 +201,9 @@ a{
 }
 .content-bloco3 button{
     background-color: #F5A54E;
+}
+.content-bloco3 button a{
+    font-size: 20px;
 }
 .content-bloco3 img{
     width: 100%;
@@ -221,8 +238,9 @@ a{
 #bloco4{
     height: 80vh;
     text-align: center;
+    background-color: var(--bg-second);
 }
-.bg-bloco4{
+.bg-image-bloco4{
     width: 100%;
     height: 100%;
     background-image: url(../image/transition/Shadow.png);
@@ -235,7 +253,7 @@ a{
     color: #fff;
     padding: 50px;
 }
-.content-bloco4 h1, p{
+.content-bloco4 h1, .content-bloco4 p{
     padding-bottom: 30px;
 }
 @media (max-width: 800px) {
@@ -287,17 +305,19 @@ a{
     padding-bottom: 20px;
     width: 300px;
     height: 300px;
+    font-family: "Open Sans", sans-serif;
 }
 .square-content-6 h2{
     padding: 15px 0 15px 20px;
     font-size: 33px;
+    color: var(--primary-color);
+    font-weight: 800;
 }
 .square-content-6 p{
     font-size: 21px;
     line-height: 25px;
     color: #333d42;
     font-weight: 400;
-    font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 800px) {
     #bloco6{
@@ -336,6 +356,7 @@ a{
     /* BLOCO 8 */
 #bloco8{
     height: 80vh;
+    background-color: var(--bg-primary);
 }
 .content-bloco8{
     height: 100%;
@@ -350,8 +371,20 @@ a{
     font-size: 75px;
 }
 .tittle-area-8 p{
+    color: var(--second-color);
     font-size: 30px;
     color: #54524f;
+}
+.content-bloco8 button{
+    background-color: var(--bg-second);
+}
+@media (max-width: 700px) {
+    .tittle-area-8 h1{
+        font-size: 60px;
+    }
+    .tittle-area-8 p{
+        font-size: 22px;
+    }
 }
 
 /* FORMULÁRIO DO BLOCO 8 */
@@ -387,6 +420,7 @@ a{
     /* FOOTER */
 footer{
     height: 70vh;
+    background-color: var(--bg-second);
 }
 .content-footer{
     height: 100%;
@@ -406,7 +440,7 @@ footer{
     font-family: "Montserrat";
 }
 .square-content-footer p, .square-content-footer a{
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: 400;
     font-family: "Montserrat";
