@@ -51,7 +51,7 @@ p{
 }
 .opition-nav{
     padding-right: 20px;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 3px;
     color: #54524f;
     font-weight: 700;
@@ -87,10 +87,10 @@ p{
 .content-bloco1{
     color: #EDB57C;
     max-width: 750px;
-    padding: 300px 0 0 150px;
+    padding: 200px 0 0 150px;
 }
 .content-bloco1 h1{
-    font-size: 85px;
+    font-size: 65px;
     filter: drop-shadow(2.575px -4.286px 2.5px rgba(84,82,79,0.22));
     font-weight: 800;
     font-family: "Open Sans", sans-serif;
@@ -103,7 +103,7 @@ p{
     font-style: italic;
 }
 .content-bloco1 p{
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 1px;
     color: #878380;
     font-weight: 400;
@@ -111,15 +111,16 @@ p{
     font-family: "Open Sans", sans-serif;
 }
 .button-bloco1{
-    margin: 30px 0;
-    width: 200px;
-    height: 47px;
+    margin: 25px 0;
+    width: 180px;
+    height: 45px;
     border-radius: 21px;
     border: none;
     background-color: #fff;
 }
 .button-bloco1 a{
     color: #878380;
+    font-size: 18px;
 }
 @media (max-width: 750px) {
     .content-bloco1{
